@@ -1,0 +1,71 @@
+
+
+.homePage {
+  display: flex;
+}
+
+.productImage, .carousel-image {
+  width: 100%;
+  height: 100%;
+  max-width: 500px; /* Adjust this value as needed */
+  height: 190px; /* Adjust this value as needed */
+  margin: auto; /* Center the carousel */
+}
+
+.carousel-image {
+  width: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+
+.Card {
+    box-shadow: 0px 5px 5px gray;
+  font-size: smaller;
+  height: 25rem;
+  width: 100%;
+  margin: 20px;
+  justify-content: flex-end;
+}
+
+.Card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.FilterMenu {
+    background-color: var(--bs-gray-900);
+    color: white;
+  position: relative;
+  padding: 10px;
+  height: inherit;
+  top: 80px;
+}
+
+.FilterMenu > span {
+  display: block;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
+  height: 60vh;
+  padding: 10px;
+  width: fit-content;
+}
+
+.navbar {
+  display: block;
+  width: 100vw;
+  z-index: 1000;
+  position: fixed !important;
+  height: 80px;
+}
+
+.productContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  padding: 20px;
+  top: 80px;
+}
